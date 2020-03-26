@@ -6,6 +6,7 @@ import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authz.AuthorizationInfo;
+import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 
@@ -13,10 +14,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomRealm extends AuthorizingRealm {
+
+    @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-        return null;
+        //获取当前登录的用户
+        User user = (User) principalCollection.getPrimaryPrincipal();
+        //通过SimpleAuthenticationInfo做授权
+        SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo();
+        //添加角色
+        simpleAuthorizationInfo.addRole(user.getRole());
+        //添加权限
+        simpleAuthorizationInfo.addStringPermissions(user.getPermissions());
+        return simpleAuthorizationInfo;
     }
 
+    @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         //1.获取用户输入的账号
         String username = (String)authenticationToken.getPrincipal();
@@ -27,7 +39,7 @@ public class CustomRealm extends AuthorizingRealm {
         }
         //3.通过SimpleAuthenticationInfo做身份处理
         SimpleAuthenticationInfo simpleAuthenticationInfo =
-                new SimpleAuthenticationInfo(user,user.getPassword(), getName());
+                new SimpleAuthenticationInfo(user, user.getPassword(), getName());
         //4.用户账号状态验证等其他业务操作
         if(!user.isAvailable()){
             throw new AuthenticationException("该账号已经被禁用");
@@ -56,9 +68,15 @@ public class CustomRealm extends AuthorizingRealm {
      * @return
      */
     private List<User> getUsers(){
-        List<User> users = new ArrayList<>();
-        users.add(new User("张小黑的猫","123qwe",true));
-        users.add(new User("张小黑的狗","123qwe",false));
+        List<User> users = new ArrayList<>(2);
+        List<String> cat = new ArrayList<>(2);
+        cat.add("sing");
+        cat.add("rap");
+        List<String> dog = new ArrayList<>(2);
+        dog.add("jump");
+        dog.add("basketball");
+        users.add(new User("张小黑的猫","123qwe",true,"cat", cat));
+        users.add(new User("张小黑的狗","123qwe",true,"dog", dog));
         return users;
     }
 }
