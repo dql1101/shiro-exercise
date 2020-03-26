@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c47455e9-63af-459e-ab60-2df962a5ca1a" name="Default Changelist" comment="" />
+    <list default="true" id="c47455e9-63af-459e-ab60-2df962a5ca1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/shiro-exercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dql/shiro/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dql/shiro/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dql/shiro/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dql/shiro/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +21,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -29,6 +43,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Ze6fGZQ4VzDaIKecZhZFM8BlXq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,9 +53,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,7 +75,7 @@
   </component>
   <component name="RunManager">
     <configuration name="ShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="shiro" />
+      <module name="shiro-exercise" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dql.shiro.*" />
@@ -60,6 +83,9 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dql.shiro.ShiroApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,6 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585187313177</updated>
       <workItem from="1585187315458" duration="1613000" />
+      <workItem from="1585189544524" duration="2688000" />
     </task>
     <servers />
   </component>
@@ -88,45 +115,101 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1585190941540">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1585190941540" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585191975494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585191975494" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1585190971194">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585190971194" />
+    <state width="452" height="466" key="DebuggerActiveHint" timestamp="1585192332279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="452" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1585192332279" />
     <state x="719" y="207" key="FileChooserDialogImpl" timestamp="1585187361865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="719" y="207" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585187361865" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1585188186685">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1585192204880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585188186685" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1585188186685">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585192204880" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1585192204880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585188186685" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1585188186685">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585192204880" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1585192204880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585188186685" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1585188186685">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585192204880" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1585192204880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585188186685" />
-    <state width="1877" height="356" key="GridCell.Tab.1.bottom" timestamp="1585188186576">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585192204880" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585192001398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585188186576" />
-    <state width="1877" height="356" key="GridCell.Tab.1.center" timestamp="1585188186576">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585192001398" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1585192001398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585188186576" />
-    <state width="1877" height="356" key="GridCell.Tab.1.left" timestamp="1585188186576">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585192001398" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1585192001398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585188186576" />
-    <state width="1877" height="356" key="GridCell.Tab.1.right" timestamp="1585188186576">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585192001398" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1585192001398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585188186576" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1585188077485">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585192001398" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1585191961354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585188077485" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585191961354" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1585191961354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585191961354" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1585191961354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585191961354" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1585191961354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585191961354" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1585191651128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585191651128" />
+    <state x="511" y="255" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1585192167562">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="511" y="255" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1585192167562" />
+    <state x="656" y="310" key="git4idea.merge.GitPullDialog" timestamp="1585189588807">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="310" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585189588807" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dql/shiro/controller/LoginController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dql/shiro/config/CustomRealm.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
