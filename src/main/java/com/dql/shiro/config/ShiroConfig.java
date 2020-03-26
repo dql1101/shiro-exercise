@@ -6,17 +6,22 @@ import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSource
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
 @Configuration
 public class ShiroConfig {
+
+    @Autowired
+    private PermissionConfig permissionConfig;
 
     /**
      * 整体请求的过滤器
@@ -35,6 +40,14 @@ public class ShiroConfig {
         filterChainMap.put("/logout","logout");
         //authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问,先配置anon再配置authc。
         filterChainMap.put("/login","anon");
+
+        // 未授权界面;
+        shiroFilterFactoryBean.setUnauthorizedUrl("/403");
+
+        //动态权限注入
+        List<Map<String,String>> perms = permissionConfig.getPerms();
+        perms.forEach(perm -> filterChainMap.put(perm.get("url"),perm.get("permission")));
+
         filterChainMap.put("/**", "authc");
 
         //设置拦截请求后跳转的URL.

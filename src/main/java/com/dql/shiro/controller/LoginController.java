@@ -14,11 +14,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class LoginController {
 
+    @GetMapping("/403")
+    public String page_403(){
+        return "403";
+    }
+
     @GetMapping("/login")
     public String login(){
         return "login";
     }
-
 
     @PostMapping("/login")
     public String login(String username, String password, Model model){
